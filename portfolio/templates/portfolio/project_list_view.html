@@ -1,0 +1,9 @@
+{% extends "portfolio/base.html" %}
+
+{% block content %}
+  {% if project_list %}
+    {% for project in project_list %}
+      <a href="/projects/{{ project.id }}">{{ project.title }}</a>
+    {% endfor %}
+  {% endif %}
+{%  endblock %}
