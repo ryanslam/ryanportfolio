@@ -1,3 +1,22 @@
 body {
     background-color: #f8f9fa;
 }
+
+.carousel-item {
+  	height: 450;
+  	background-size: cover;
+  	background-position: center center;
+}
+
+.carousel-caption h1{
+    color: #fff;
+    font-size: 5em;
+    position: middle;
+    height: 200px;
+}
+
+#about_pic{
+    width: 250px;
+    height: 250px;
+    margin: 100px 0px 50px 0px;
+}
