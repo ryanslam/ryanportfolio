@@ -8,6 +8,8 @@ from portfolio.models import Project, ContactInfo
 class HomeView(TemplateView):
     template_name = "portfolio/home.html"
 
+class AboutView(TemplateView):
+    template_name = "portfolio/about.html"
 
 class ProjectListView(ListView):
     model = Project

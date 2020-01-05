@@ -1,22 +1,117 @@
+h1, h2, h3, h4, h5, h6, p, a, button{
+  font-family: 'Open Sans'
+}
+
 body {
     background-color: #f8f9fa;
 }
 
+.navbar-padding{
+    padding-right: 5rem;
+    padding-left: 2.5rem;
+}
+
+.title-font{
+    font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', sans-serif;
+    font-size: 4rem;
+    font-weight: lighter;
+    margin: 0px, 0px, 10px, 0px;
+}
+
+p{
+    font-size: 1.5rem;
+    font-weight: lighter;
+    margin: 10px, 0px, 0px, 0px;
+}
+
 .carousel-item {
-  	height: 450;
+  	height: auto !important;
   	background-size: cover;
   	background-position: center center;
 }
 
 .carousel-caption h1{
     color: #fff;
-    font-size: 5em;
+    font-size: auto;
     position: middle;
-    height: 200px;
 }
 
-#about_pic{
+#top {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url(../images/sf_colored.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    height: 100vh;
+}
+
+#top .container-fluid {
+    position: relative;
+    top: 32%;
+    text-align: center;
+    max-width: 80%;
+    color: white;
+    top: 45%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+}
+
+.navbar-inverse {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-color: rgba(0, 0, 0, 0.5);
+}
+
+.format-jumbo{
+    margin: 0;
+    padding: 4rem 4rem;
+    text-color: white;
+    background-color: rgb(255, 255, 255);
+}
+
+.about-title{
+
+}
+
+#about-row{
+    height: 100%;
+}
+
+#about-col-2{
+    background-color: rgb(245,245,220);
+}
+
+#button_container{
+    margin: 20px 0px 0px 0px
+}
+
+.box {
+    padding: 3% 10%;
+}
+
+.btn-front-margin{
+    margin: 0px 8px 0px 8px;
+}
+
+#default-background{
+    background-color: white;
+}
+
+#about-pic{
     width: 250px;
     height: 250px;
-    margin: 100px 0px 50px 0px;
+    margin: 0px 0px 50px 0px;
+}
+
+.icon-panda{
+    filter: brightness(0) invert(1);
+}
+
+.icon-panda:hover,
+.icon-panda:focus {
+  filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%);
+}
+
+.nav-background{
+    background-color: #f8f9fa;
 }

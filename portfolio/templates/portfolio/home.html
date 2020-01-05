@@ -1,1 +1,41 @@
 {% extends "portfolio/base.html" %}
+{% block home %}
+    <body id="top">
+    {% block nav %}
+        <nav class="navbar navbar-padding navbar-expand-lg navbar-dark sticky-top navbar-inverse" >
+          <a class="navbar-brand" href="/">
+            <img class="icon-panda" src="{% static 'portfolio/images/panda_logo.svg' %}"
+                 width="35" height="35" alt="">
+          </a>
+          <div class="collapse navbar-collapse ">
+            <ul class="nav navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="/about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/projects">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+  {% endblock %}
+  {% block content %}
+    <div id="intro" class="container-fluid box" >
+        <h1 class="title-font">Ryan Lam</h1>
+        <hr style="width: 60%; background: #fff;">
+        <p>Welcome to my portfolio</p>
+        <div class="row">
+          <div class="col text-center" id="button_container">
+            <a href="/about"><button type="button" class="btn btn-front-margin btn-outline-light">About</button></a>
+            <a href="/projects"><button type="button" class="btn btn-front-margin btn-outline-light">Project</button></a>
+            <a href="/contact"><button type="button" class="btn btn-front-margin btn-outline-light">Contact</button></a>
+          </div>
+        </div>
+    </div>
+  {% endblock %}
+  </body>
+{% endblock %}
+
