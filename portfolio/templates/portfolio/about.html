@@ -1,15 +1,19 @@
 {% extends "portfolio/base.html" %}
 
 {% block content %}
-<div>
-  <div class="container-fluid">
-    <div id="about-row" class="row">
-      <div class="col-lg text-center">
-
-      </div>
-      <div id="about-col-2" class="col-lg">
-
-      </div>
+<div name="about" class="about background-darkblue container-fluid">
+  <div class="container">
+    <img src="{% static 'portfolio/images/about_pic.png' %}" class="about-pic">
+  </div>
+  <p class="page-sub-text">Computer Science Student | Santa Clara University | Software Engineer</p>
+</div>
+<div class="fill background-beige container-fluid">
+  <div class="row">
+    <div class="col-lg-6">
+      <h2 class="page-sub-title">About</h2>
+    </div>
+    <div class="col-lg-6">
+      <h2 class="page-sub-title">Everything Else</h2>
     </div>
   </div>
 </div>

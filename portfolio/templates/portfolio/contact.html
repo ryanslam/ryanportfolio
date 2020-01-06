@@ -1,14 +1,16 @@
 {% extends "portfolio/base.html" %}
 
 {% block content %}
-<div class="container-fluid">
-  <div class="text-center">
-    <h1>{{ contact_info.name }}</h1>
-    <p>Email: {{ contact_info.email }}
-    <br>Phone Number: {{ contact_info.phone_number }}</p>
-    <div class="container">
-      <a href={{contact_info.github_url}}><i class="fa fa-github" style="font-size:36px;color:black"></i></a>
-      <a href={{contact_info.linkedin_url}}><i class="fa fa-linkedin-square" style="font-size:36px;color:black"></i></a>
+<div class="full-background background-darkblue">
+  <div name="contact" class="contact container">
+    <h2 class="page-title">Contact</h2>
+    <hr style="width:80%; border-color:#6C7A89; opacity: .6; margin-top: 20px;">
+  </div>
+  <div class="container">
+    <div class="contact-icons">
+      <a href="mailto:ryanshiau@gmail.com" target="_blank"><span class="fas fa-envelope icon"></span></a>
+      <a href="https://www.github.com/ryanslam" target="_blank"><span class="fab fa-github-square icon"></span></a>
+      <a href="https://www.linkedin.com" target="_blank"><span class="fab fa-linkedin icon"></span></a>
     </div>
   </div>
 </div>

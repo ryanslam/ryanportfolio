@@ -1,110 +1,115 @@
-h1, h2, h3, h4, h5, h6, p, a, button{
-  font-family: 'Open Sans'
+* {
+  font-family: 'Open Sans', sans-serif;
+  color: rgba(253, 253, 253, 1);
 }
 
-body {
-    background-color: #f8f9fa;
+.navbar-padding {
+  padding: 10px 2.5rem 10px 2.5rem;
 }
 
-.navbar-padding{
-    padding-right: 5rem;
-    padding-left: 2.5rem;
+.nav.navbar-nav li a {
+   color: #fff;
+ }
+
+.nav-item {
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
-.title-font{
-    font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', sans-serif;
-    font-size: 4rem;
-    font-weight: lighter;
-    margin: 0px, 0px, 10px, 0px;
+.main-title-font {
+  font-size: 5rem;
+  font-weight: lighter;
+  text-align: center;
 }
 
-p{
-    font-size: 1.5rem;
-    font-weight: lighter;
-    margin: 10px, 0px, 0px, 0px;
+.page-title {
+  font-size: 4rem;
+  font-weight: lighter;
+  text-align: center;
+}
+
+.page-sub-title {
+  font-weight: lighter;
+  text-align: center;
+  font-size: 3rem;
+  margin: 2rem 0;
+}
+
+.page-sub-text {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: lighter;
+  color: #FDFDFD;
+  text-align: center;
+  font-size: 1rem;
+  margin: 1rem 0;
 }
 
 .carousel-item {
-  	height: auto !important;
-  	background-size: cover;
-  	background-position: center center;
+  height: auto !important;
+  background-size: cover;
+  background-position: center center;
 }
 
 .carousel-caption h1{
-    color: #fff;
-    font-size: auto;
-    position: middle;
+  color: #fff;
+  font-size: auto;
+  position: middle;
 }
 
-#top {
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url(../images/sf_colored.png);
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center bottom;
-    height: 100vh;
+#intro {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url(../images/sf_colored.png);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+  height: 100vh;
 }
 
-#top .container-fluid {
-    position: relative;
-    top: 32%;
-    text-align: center;
-    max-width: 80%;
-    color: white;
-    top: 45%;
-    left: 40%;
-    transform: translate(-50%, -50%);
-    padding: 20px;
+.center-box {
+  position: relative;
+  text-align: center;
+  max-width: 80%;
+  color: white;
+  top: 45%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
 }
 
-.navbar-inverse {
-    background-color: rgba(0, 0, 0, 0.5);
-    border-color: rgba(0, 0, 0, 0.5);
+.navbar-fade {
+  background-color: rgba(0, 0, 0, 1);
+  border-color: rgba(0, 0, 0, 1);
+
+  opacity: 0.5;
+  transition: opacity .25s ease-in-out;
+  -moz-transition: opacity .25s ease-in-out;
+  -webkit-transition: opacity .25s ease-in-out;
+}
+.navbar-fade:hover {
+  opacity: 1;
 }
 
 .format-jumbo{
-    margin: 0;
-    padding: 4rem 4rem;
-    text-color: white;
-    background-color: rgb(255, 255, 255);
+  margin: 0;
+  padding: 4rem 4rem;
+  text-color: white;
+  background-color: rgb(255, 255, 255);
 }
 
-.about-title{
-
-}
-
-#about-row{
-    height: 100%;
-}
-
-#about-col-2{
-    background-color: rgb(245,245,220);
-}
-
-#button_container{
-    margin: 20px 0px 0px 0px
-}
-
-.box {
-    padding: 3% 10%;
+#button_container {
+  margin: 20px 0px 0px 0px
 }
 
 .btn-front-margin{
-    margin: 0px 8px 0px 8px;
-}
-
-#default-background{
-    background-color: white;
-}
-
-#about-pic{
-    width: 250px;
-    height: 250px;
-    margin: 0px 0px 50px 0px;
+  margin: 0px 8px 0px 8px;
 }
 
 .icon-panda{
-    filter: brightness(0) invert(1);
+  filter: brightness(0) invert(1);
+
+  transition: all .25s ease-in-out;
+  -moz-transition: all .25s ease-in-out;
+  -webkit-transition: all .25s ease-in-out;
 }
 
 .icon-panda:hover,
@@ -113,5 +118,64 @@ p{
 }
 
 .nav-background{
-    background-color: #f8f9fa;
+  background-color: #f8f9fa;
+}
+
+.full-background {
+  height: 100vh;
+}
+
+.fill {
+    min-height: 100%;
+    height: 100%;
+}
+
+.box{
+  padding: 10%;
+}
+
+.background-darkblue {
+  background-color: #22313F;
+}
+
+.background-beige {
+  background-color: rgb(245,245,220);
+}
+
+.contact {
+  padding-top: 20vh;
+  padding-bottom: 20vh;
+}
+
+.contact-icons {
+  text-align: center;
+  margin: auto;
+}
+
+.icon{
+  padding-left: 9%;
+  padding-right: 9%;
+}
+.icon:hover{
+  opacity:.50;
+}
+
+.contact-icons .icon{
+  color: white;
+  font-size: 3.5em;
+  text-align: center;
+}
+
+.about {
+  padding-top: 15vh;
+  padding-bottom: 5vh;
+}
+
+.about-pic {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 2rem auto;
+  display: block
 }
